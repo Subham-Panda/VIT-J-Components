@@ -54,10 +54,6 @@ class handDetector():
 	
 	def fingersUp(self):
 		fingers = []
-		# print(self.tipIds[0])
-		# print(self.tipIds[0] - 1)
-		# print(self.lmList)
-		# print(self.lmList[self.tipIds[0]][1])
 
 		if self.results.multi_hand_landmarks:
 			if self.lmList[self.tipIds[0]][1] > self.lmList[self.tipIds[0] - 1][1]:
